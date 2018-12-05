@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Sedgwick+Ave');
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sedgwick Ave', cursive;
+    background: url(../img/bg.jpg);
+    background-position: center;
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    padding: 20px 70px;
+    height: 100%;
+}
+
+.week {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 6rem;
+    padding: 20px 0;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.week-end {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 6rem;
+    padding-left: 150px;
+}
+
+li {
+    list-style: none;
+
+}
+
+ul {
+    padding-left: 10px;
+}
+
+input[type="submit"] {
+    font-family: 'Sedgwick Ave', cursive;
+    color: #fff;
+    width: 70px;
+    height: 20px;
+    border: 0;
+    background: #000;
+    border-radius: 5%;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    color: #000;
+    background: #FFF;
+    width: 72px;
+    height: 20px;
+}
+
+.btn {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+}
+
+.inputBox {
+    position: relative;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 30px;
+    /* border-bottom: 1px solid #000; */
+    border: 0;
+    border-bottom: 1px solid #000;
+    outline: none;
+    background: transparent;
+    pointer-events: initial;
+
+}
+
+.week-end input[type="text"] {
+    width: 75%;
+}
+
+.week-end input[type="submit"] {
+    align-items: left;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000;
+    pointer-events: 0;
+    transition: .5s;
+}
+
+.inputBox input[type="text"]:focus~label,
+.inputBox input[type="text"]:valid~label {
+    top: -23px;
+    color: #fff;
+    opacity: .8;
+    font-size: 12px;
+}
+
+#Monday:hover,
+#Tuesday:hover,
+#Wednesday:hover,
+#Thursday:hover,
+#Friday:hover,
+#Saturday:hover,
+#Sunday:hover {
+    background-color: rgba(52, 55, 56, 0.099);
+    cursor: crosshair;
+    transition: all 0.5s ease-in-out;
+}
+
+i {
+    float: right;
+    color: #000;
+    opacity: .7;
+}
+
+i:hover {
+    color: red !important;
+    transition: all .5s ease;
+
+}
+
+
+
+@media screen and (max-width:1030px) {
+    .week {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    .week #Friday {
+        position: relative;
+        left: 50%;
+    }
+
+    .week-end {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width:766px) {
+    .week {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .week #Friday {
+        left: 0;
+    }
+
+    .week-end {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:522px) {
+    .week {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .week-end {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+}

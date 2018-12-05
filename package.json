@@ -1,0 +1,19 @@
+{
+  "name": "python",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hortopanalexandru/schedule.git"
+  },
+  "author": "Hortopan Alexandru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hortopanalexandru/schedule/issues"
+  },
+  "homepage": "https://github.com/hortopanalexandru/schedule#readme"
+}

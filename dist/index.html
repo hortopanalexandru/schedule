@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Schedule</h1>
+    </header>
+    <div class="container">
+        <div class="week">
+            <div id="Monday">
+                <h2 class="Monday">Monday</h2>
+                <form id="addFormMonday" class="inputBox">
+                    <input type="text" id="item-monday" required="">
+                    <label>Add activity</label>
+                    <input class="btn" type="submit" value="Add">
+                </form>
+                <ul id="items-monday" class="list-group">
+                    <li class="list-item-monday">Homework<i class="fas fa-trash-alt delete-monday delete"></i></li>
+                    <li class="list-item-monday">Dishes<i class="fas fa-trash-alt delete-monday delete"></i></li>
+                    <li class="list-item-monday">Gym<i class="fas fa-trash-alt delete-monday delete"></i></li>
+                    <li class="list-item-monday">Date with bae<i class="fas fa-trash-alt delete-monday delete"></i></li>
+                </ul>
+            </div>
+            <div id="Tuesday">
+                <h2 class="Tuesday">Tuesday</h2>
+                <form id="addFormTuesday" class="inputBox">
+                    <input type="text" id="item-tuesday" required="">
+                    <label>Add activity</label>
+                    <input class="btn" type="submit" value="Add">
+                </form>
+                <ul id="items-tuesday" class="list-group">
+                    <li class="list-item-tuesday">Coffee <i class="fas fa-trash-alt delete-tuesday delete"></i></li>
+                    <li class="list-item-tuesday">Work <i class="fas fa-trash-alt delete-tuesday delete"></i></li>
+                </ul>
+            </div>
+            <div id="Wednesday">
+                <h2 class="Wednesday">Wednesday</h2>
+                <form id="addFormWednesday" class="inputBox">
+                    <input type="text" id="item-wednesday" required="">
+                    <label>Add activity</label>
+                    <input class="btn" type="submit" value="Add">
+                </form>
+                <ul id="items-wednesday" class="list-group">
+                    <li class="list-item-wednesday">Coffee <i class="fas fa-trash-alt delete-wednesday delete"></i></li>
+                    <li class="list-item-wednesday">Work <i class="fas fa-trash-alt delete-wednesday delete"></i></li>
+                </ul>
+            </div>
+            <div id="Thursday">
+                <h2 class="Thursday">Thursday</h2>
+                <form id="addFormThursday" class="inputBox">
+                    <input type="text" id="item-thursday" required="">
+                    <label>Add activity</label>
+                    <input class="btn" type="submit" value="Add">
+                </form>
+                <ul id="items-thursday" class="list-group">
+                    <!-- <li class="list-item-thursday">Coffee  <i class="fas fa-trash-alt delete-thursday delete"></i></li>
+                    <li class="list-item-thursday">Work  <i class="fas fa-trash-alt delete-thursday delete"></i></li>
+                    <li class="list-item-thursday">Item 3 <i class="fas fa-trash-alt delete-thursday delete"></i></li>
+                    <li class="list-item-thursday">Item 4  <i class="fas fa-trash-alt delete-thursday delete"></i></li> -->
+                </ul>
+            </div>
+            <div id="Friday">
+                <h2 class="Friday">Friday</h2>
+                <form id="addFormFriday" class="inputBox">
+                    <input type="text" id="item-friday" required="">
+                    <label>Add activity</label>
+                    <input class="btn" type="submit" value="Add">
+                </form>
+                <ul id="items-friday" class="list-group">
+                    <li class="list-item-friday">Coffee <i class="fas fa-trash-alt delete-friday delete"></i></li>
+                    <li class="list-item-friday">Work <i class="fas fa-trash-alt delete-friday delete"></i></li>
+                    <li class="list-item-friday">Sleep <i class="fas fa-trash-alt delete-friday delete"></i></li>
+                    <li class="list-item-friday">Shopping <i class="fas fa-trash-alt delete-friday delete"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="week-end">
+            <div id="Saturday">
+                <h2 class="Saturday">Saturday</h2>
+                <form id="addFormSaturday" class="inputBox">
+                    <input type="text" id="item-saturday" required="">
+                    <label>Add activity</label>
+                    <input class="btn" type="submit" value="Add">
+                </form>
+                <ul id="items-saturday" class="list-group">
+                    <li class="list-item-saturday">Coffee <i class="fas fa-trash-alt delete-saturday delete"></i></li>
+                    <li class="list-item-saturday">Learning something new <i class="fas fa-trash-alt delete-saturday delete"></i></li>
+                    <li class="list-item-saturday">Shopping <i class="fas fa-trash-alt delete-saturday delete"></i></li>
+                </ul>
+            </div>
+            <div id="Sunday">
+                <h2 class="Sunday">Sunday</h2>
+                <form id="addFormSunday" class="inputBox">
+                    <input type="text" id="item-sunday" required="">
+                    <label>Add activity</label>
+                    <input class="btn" type="submit" value="Add">
+                </form>
+                <ul id="items-sunday" class="list-group">
+                    <li class="list-group-sunday">Coffee <i class="fas fa-trash-alt delete-sunday delete"></i></li>
+                    <li class="list-group-sunday">Work <i class="fas fa-trash-alt delete-sunday delete"></i></li>
+                    <li class="list-group-sunday">Family Lunch <i class="fas fa-trash-alt delete-sunday delete"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
